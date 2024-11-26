@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Gameplay Anketi</title>
+</head>
+<body>
+    <h1 id="title">Gameplay</h1>
+    <p id="description">
+        Oyunları nasıl oynadığınız ile ilgili kısa bir anket.
+    </p>
+    <form id="survey-form">
+        <div class="kutuanket">
+            <div class="sorgu">
+                    <p>Cinsiyetiniz:</p>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Erkek</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Kadın</label>
+                </div>
+            <div class="sorgu">
+                <label for="name" id="name-label">İsminiz:</label>
+                <input type="text" id="name" class="textbox" name="name" placeholder="Adınızı girin" required>
+            </div>
+            <div class="sorgu">
+                <label for="email" id="email-label">Emailiniz:</label>
+                <input type="email" id="email" class="textbox" name="email" placeholder="Emailinizi girin" required>
+            </div>
+            <div class="sorgu">
+                <label for="number" id="number-label">Numaraniz:</label>
+                <input type="number" id="number" class="textbox" name="number" min="10" max="10" placeholder="Numaranızı girin" required>
+            </div>
+            <div class="sorgu">
+                <label for="dropdown" id="dropdown-label">Hangi tür oyun oynuyorsunuz:</label>
+                    <select id="dropdown" name="dropdown" required>
+                        <option value="" disabled selected>Seçim yapın</option>
+                        <option value="option1">offline</option>
+                        <option value="option2">online</option>
+                        <option value="option2">co-op</option>
+                    </select>
+                </div>
+                <div class="sorgu">
+                    <label for="comments">Bir oyunu ne tarzda oynarsınız</label><br>
+                    <textarea id="comments" name="comments" placeholder="Hızlı, yavaş, dikkatli, kaynak tasarruflu/tasarrufsuz, all in vb oyun tarzları" required></textarea>
+                </div>
+                <div class="sorgu">
+                <p>Hangi tür oyunlar oynuyorsunuz:</p>
+        <div class="checkbox-group">
+          <input type="checkbox" id="Aksiyon" name="hobbies" value="Aksiyon"/>
+          <label for="Aksiyon">Aksiyon</label><br />
+
+          <input type="checkbox" id="Macera" name="hobbies" value="Macera"/>
+          <label for="Macera">Spor</label><br />
+
+          <input type="checkbox" id="RPG" name="hobbies" value="RPG"/>
+          <label for="RPG">RPG</label><br />
+
+          <input type="checkbox" id="Strateji" name="hobbies" value="Strateji"/>
+          <label for="Strateji">Strateji</label><br />
+
+          <input type="checkbox" id="Simülasyon " name="hobbies" value="Simülasyon "/>
+          <label for="Simülasyon ">Simülasyon</label><br />
+
+          <input type="checkbox" id="Spor ve Yarış" name="hobbies" value="Spor ve Yarış"/>
+          <label for="Spor ve Yarış">Spor ve Yarış</label><br />
+
+          <input type="checkbox" id="Korku" name="hobbies" value="Korku" />
+          <label for="Korku">Korku</label><br />
+
+          <input type="checkbox" id="puzzle" name="hobbies" value="puzzle"/>
+          <label for="puzzle">puzzle</label><br />
+
+          <input type="checkbox" id="Platform" name="hobbies" value="Platform"/>
+          <label for="Platform">Platform</label><br />
+
+          <input type="checkbox" id="Battle Royale" name="hobbies" value="Battle Royale" />
+          <label for="Battle Royale">Battle Royale</label><br/>
+
+          <input type="checkbox" id="MOBA" name="hobbies" value="MOBA" />
+          <label for="MOBA">MOBA</label><br/>
+</div>
+        <button type="submit" id="submit">Gönder</button>
+    </div>
+    </form>
+</body>
+</html>
